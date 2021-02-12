@@ -8,21 +8,24 @@
 
 from help import Help
 from app import App
+from getpath import Path
 
 class Terminal:
     def run():
         print("Welcome to Mardown - README - generator.\nWhat do you want?\nA) Help\tB) Create")
         input1 = input(">> ")
+
+        # Help system
         if input1 == "a" or input1 == "A":
-            Terminal.run_help()
+            Help.run()
+        # Application system
         elif input1 == "b" or input1 == "B":
-            Terminal.run_app()
+            path = Path.run()
+            Save.run(path)
+            App.init(path)
+            App.run()
+        # Error
         else:
             print("[!] Choose the options beetwen A or B!")
             Terminal.run()
-
-    def run_help():
-        Help.run()
-    def run_app():
-        App.run()
         
