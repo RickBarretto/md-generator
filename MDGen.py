@@ -6,7 +6,8 @@
 + Functions, to codeblocks, h1 - h6, quotes and lists.
 """
 
-import help, app
+from help import Help
+from app import App
 
 class Terminal:
     def run():
