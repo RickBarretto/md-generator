@@ -1,3 +1,7 @@
 class Help:
     def run():
-        pass
+        with open("help.txt", "r") as f:
+            h = f.read()
+            print(h)
+
+Help.run()

@@ -22,7 +22,7 @@ class Terminal:
             Terminal.run()
 
     def run_help():
-        pass
+        Help.run()
     def run_app():
-        pass
+        App.run()
         
