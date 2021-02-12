@@ -6,6 +6,8 @@
 + Functions, to codeblocks, h1 - h6, quotes and lists.
 """
 
+import help, app
+
 class Terminal:
     def run():
         print("Welcome to Mardown - README - generator.\nWhat do you want?\nA) Help\tB) Create")
